@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="./signup.css" />
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form id="userForm" action="/signup" method="post">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input
+                    placeholder="Enter Name"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                />
+            </div>
+            <div class="input-group">
+                <label for="mobile-number">Mobile Number</label>
+                <input
+                    placeholder="Please enter mobile number"
+                    type="text"
+                    id="mobile-number"
+                    name="mobileNumber"
+                    required
+                />
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                    placeholder="Enter Email Address"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                />
+            </div>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input
+                    placeholder="Enter Username"
+                    type="text"
+                    id="username"
+                    name="username"
+                    required
+                />
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input
+                    placeholder="Enter Password"
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                />
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <div class="Log-in-link">
+                <span>Already Have an Account ? </span>
+                <a href="../Login/login.html"><span id="Log-In"> Login</span></a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('userForm').addEventListener('submit', async function(event) {
+                event.preventDefault();  // Prevent the default form submission
+
+                const user = {
+                    name: document.getElementById('name').value,
+                    mobile: document.getElementById('mobile-number').value,
+                    email: document.getElementById('email').value,
+                    username: document.getElementById('username').value,
+                    password: document.getElementById('password').value
+                };
+
+                console.log('User data to send:', user);  // Debugging: Check the user data
+
+                try {
+                    const response = await fetch('http://localhost:8080/saveUser', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(user)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    console.log('User saved successfully:', data);
+                    alert('User saved successfully');
+                } catch (error) {
+                    console.error('Failed to save user:', error);
+                    alert('Failed to save user. Please try again.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

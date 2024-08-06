@@ -1,0 +1,97 @@
+/* style.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('./background-images') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('./background-images/cosmetics-7512332.jpg');
+}
+
+.signup-container {
+  background: rgba(26, 25, 25, 0);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px rgba(13, 13, 13, 0.1);
+  width: 300px;
+  text-align: center;
+  box-shadow: 1px 1px 2px 2px rgba(136, 134, 134, 0.858);
+  background-size: cover;
+  margin-right: 45%;
+  margin-bottom: 1%;
+  
+}
+
+h1 {
+  color: #000000;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 1200;
+  font-size: xx-large;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+  /* font-size: larger; */
+}
+
+label {
+  display: block;
+  color: #e8e4e4;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #9a96964f;
+  border-radius: 12px;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: #7d7c7c11;
+}
+
+.signup-btn {
+  background-color: #2897a5;
+  color: #f6f3f3;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+}
+
+.Log-in-link{
+  margin-top: 20px;
+  color: rgba(255, 255, 254, 0.998);
+  font-size: large;
+}
+
+a{
+  text-decoration: none;
+}
+
+#Log-In{
+  margin-right: 10px;
+  color: rgb(89, 242, 161);
+  cursor: pointer;
+  font-size: large;
+}
+
+.signup-btn:hover {
+  background-color: #22251e;
+}
+
+@media (max-width: 400px) {
+  .signup-container {
+      width: 100%;
+  }
+}

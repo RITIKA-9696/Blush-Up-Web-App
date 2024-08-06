@@ -1,0 +1,118 @@
+let f_items = [
+  {
+    id: '001',
+  image: './images/s1.jpg',
+  company_name: 'Cartlon London',
+  item_name: `Shimmer Women's Footwear`,
+  current_price: '606',
+  original_price: '1340',
+  discount: '56',
+},
+{
+  id: '002',
+  image: './images/s2.jpg',
+  company_name: 'Nike',
+  item_name: 'Men Textured Shoes',
+  current_price: '1400',
+  original_price: '1864',
+  discount: '20',
+},
+{
+  id: '003',
+image: './images/s3.jpg',
+company_name: 'Denill',
+item_name: `Women's Heeled Pumps`,
+current_price: '750',
+original_price: '1340',
+discount: '34',
+},
+{
+  id: '004',
+image: './images/s4.jpg',
+company_name: 'Red Tape',
+item_name: `Men's Shoes`,
+current_price: '606',
+original_price: '1340',
+discount: '56',
+},
+{
+  id: '005',
+image: './images/s5.jpg',
+company_name: 'Puma',
+item_name: 'Men C-Block Shoes',
+current_price: '1800',
+original_price: '2200',
+discount: '10',
+},
+{
+  id: '006',
+image: './images/s6.jpg',
+company_name: 'Red Tape',
+item_name: `Men's Footwear`,
+current_price: '3200',
+original_price: '4000',
+discount: '15',
+},
+
+{
+  id: '007',
+image: './images/s7.jpg',
+company_name: 'Cartlon London',
+item_name: `Men's Footwear`,
+current_price: '800',
+original_price: '1200',
+discount: '7',
+},
+
+{
+  id: '008',
+image: './images/s8.jpg',
+company_name: 'Campus',
+item_name: 'Men Colourblocked Sneaker',
+current_price: '1400',
+original_price: '1600',
+discount: '5',
+},
+
+{
+  id: '009',
+image: './images/s9.jpg',
+company_name: 'Red Tape',
+item_name: 'Men Leather Flat Boots',
+current_price: '2000',
+original_price: '4000',
+discount: '50',
+},
+
+{
+  id: '010',
+image: './images/s10.jpg',
+company_name: 'Campus',
+item_name: `Men's Boots`,
+current_price: '1200',
+original_price: '1340',
+discount: '8',
+},
+
+{
+  id: '011',
+image: './images/s11.jpg',
+company_name: 'Cartlon London',
+item_name: `Men's Footwear`,
+current_price: '3200',
+original_price: '4000',
+discount: '16',
+},
+
+{
+  id: '012',
+image: './images/s12.jpg',
+company_name: 'Cartlon London',
+item_name: `Black Women's Pumps`,
+current_price: '900',
+original_price: '1340',
+discount: '36',
+},
+
+
+]
